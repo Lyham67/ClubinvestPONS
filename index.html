@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Invest - Nouvelle Génération d'Investisseurs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Club Invest</div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#objectifs">Objectifs</a></li>
+                <li><a href="#rejoindre">Rejoindre</a></li>
+                <li><a href="#equipe">Équipe</a></li>
+                <li><a href="#inscription">Inscription</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section avec image de fond -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Rejoins la nouvelle génération d'investisseurs et d'entrepreneurs prêts à bâtir le futur.</h1>
+            <div class="hero-subtitle">
+                <p>Ensemble, on apprend à faire fructifier nos idées et notre capital.</p>
+                <p>Le Club Invest, c'est une communauté où ambition rime avec entraide.</p>
+                <p>Que tu débutes ou que tu aies déjà de l'expérience, ta place est ici.</p>
+            </div>
+            <a href="#inscription" class="cta-button">Découvrir le club</a>
+        </div>
+    </section>
+
+    <!-- Section Objectifs -->
+    <section id="objectifs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Apprendre, entreprendre et investir ensemble pour transformer nos ambitions en actions.</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <p>Développe tes connaissances en finance, entrepreneuriat et gestion de projets.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <p>Passe de la théorie à la pratique grâce à des ateliers, défis et simulations d'investissement.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <p>Construis ton réseau avec des profils motivés, passionnés et inspirants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Comment Rejoindre -->
+    <section id="rejoindre" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>Une seule décision peut changer ta trajectoire : rejoins le Club Invest aujourd'hui.</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">✨</div>
+                    <p>L'adhésion est simple, rapide et ouverte à tous les curieux d'investissement.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <p>Participe à nos événements d'introduction pour découvrir notre fonctionnement.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💼</div>
+                    <p>Deviens membre et commence ton parcours d'apprentissage dès maintenant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Équipe Fondatrice -->
+    <section id="equipe" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Des passionnés d'investissement et d'entrepreneuriat, unis par la même vision : créer des leaders.</h2>
+            </div>
+            <div class="team-content">
+                <div class="team-text">
+                    <p>Issus de parcours variés, nous partageons la même envie : transmettre et grandir ensemble.</p>
+                    <p>Chaque fondateur apporte son expertise : finance, business, stratégie ou communication.</p>
+                    <p>Notre force : une équipe soudée, ambitieuse et tournée vers l'avenir.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Paul.png" alt="Paul-Antoine PONS">
+                    </div>
+                    <p class="member-caption">Notre CEO Paul-Antoine PONS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Inscription -->
+    <section id="inscription" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ton avenir commence ici. Laisse-nous tes coordonnées et fais partie du mouvement.</h2>
+            </div>
+            <div class="inscription-content">
+                <p>Remplis le formulaire ci-dessous pour recevoir toutes les infos sur le club.</p>
+                <p>Rejoins notre communauté et sois informé des prochains événements.</p>
+                <p>C'est gratuit, rapide et c'est le premier pas vers une nouvelle aventure.</p>
+            </div>
+            <button class="cta-button" id="openModalBtn">Nous rejoindre</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Club Invest. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Formulaire -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulaire d'adhésion</h2>
+            <form id="adhesionForm">
+                <div class="form-group">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Âge *</label>
+                    <input type="number" id="age" name="age" min="16" max="99" required>
+                </div>
+                <div class="form-group">
+                    <label for="motivation">Motivation *</label>
+                    <textarea id="motivation" name="motivation" rows="5" placeholder="Prouvez-nous que vous êtes motivé" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fichier">Pièce jointe</label>
+                    <div class="file-upload">
+                        <input type="file" id="fichier" name="fichier" accept=".pdf,.doc,.docx">
+                        <label for="fichier" class="file-label">
+                            <span class="file-icon">📎</span>
+                            <span class="file-text">Cliquez pour déposer vos fichiers</span>
+                        </label>
+                        <span class="file-name" id="fileName"></span>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Envoyer ma candidature</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Confirmation -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content confirmation-content">
+            <div class="confirmation-icon">✅</div>
+            <h2>Candidature envoyée !</h2>
+            <p class="confirmation-text">Merci pour votre candidature au Club Invest.</p>
+            <p class="confirmation-text">Nous avons bien reçu votre dossier et nous vous recontacterons sous peu pour la suite du processus.</p>
+            <p class="confirmation-subtext">À très bientôt !</p>
+            <button class="cta-button" id="returnHomeBtn">Retour à l'accueil</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
